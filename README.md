@@ -50,4 +50,4 @@ The Ensure.that take 2 parameters:
                 response->response.body("exchange", equalTo("NASDAQ")));
 ```
 ## 4. The Report
-![alt text](http://url/to/img.png)
+![Report of Rest API Test with Serenity Rest Assured](https://github.com/khanheuroland/restAPI-using-RestAssured/blob/master/Screen%20Shot%202020-06-09%20at%2009.03.36.png)
