@@ -31,6 +31,6 @@ We can use the RestAssured.baseURI to store the domain url, then just use the pa
     @Test
     public void find_a_simple_field_value(){
         //Create the request
-        given().when().get("https://bddtrader.herokuapp.com/api/stock/aapl/company");
+        given().when().get("stock/aapl/company");
     }
 ```
