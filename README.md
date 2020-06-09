@@ -45,6 +45,13 @@ To create the request with POST method, we have to use the content type and body
                 .body(newClient)
                 .when().post("/client")
 ```
+### Header of Request
+With the request require the header information such as Authorization, we can add the header attribute by use header() method like below code.
+
+```
+        given().contentType("application/json")
+                .and().header("Authorization", "Bearer xxx")
+```
 
 ## 3. Verify Responses
 
