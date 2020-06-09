@@ -49,4 +49,5 @@ The Ensure.that take 2 parameters:
             .andThat("the exchange should be NASDAQ",
                 response->response.body("exchange", equalTo("NASDAQ")));
 ```
-
+## 4. The Report
+![alt text](http://url/to/img.png)
