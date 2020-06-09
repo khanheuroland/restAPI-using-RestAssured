@@ -1,1 +1,1 @@
-# restAPI-using-RestAssured
+# Test RestAPI with Serenity RestAssured Example
