@@ -38,6 +38,14 @@ We can use the RestAssured.baseURI to store the domain url, then just use the pa
 
 ### POST Method
 
+To create the request with POST method, we have to use the content type and body before use the post to send the request to server. The Body value can take an JAVA Object or Json text object as well 
+
+```
+        given().contentType("application/json").and()
+                .body(newClient)
+                .when().post("/client")
+```
+
 ## 3. Verify Responses
 
 We can use the Ensure object to verify response of request. 
