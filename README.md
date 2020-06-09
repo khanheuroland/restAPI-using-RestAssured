@@ -17,5 +17,20 @@ Rest assured can be added as a dependency in maven pom.xml as follows:
 ##2. Test Get API
 With the GET method API, we don't need send any form data from client. We just create the get request like below
 ```
-given().when().get("https://bddtrader.herokuapp.com/api/stock/aapl/company");
+    given().when().get("https://bddtrader.herokuapp.com/api/stock/aapl/company");
+```
+
+We can use the RestAssured.baseURI to store the domain url, then just use the path of API on request like this
+
+```
+    @Before
+    public void prepare_rest_config(){
+        RestAssured.baseURI = "https://bddtrader.herokuapp.com/api";
+    }
+    
+    @Test
+    public void find_a_simple_field_value(){
+        //Create the request
+        given().when().get("https://bddtrader.herokuapp.com/api/stock/aapl/company");
+    }
 ```
